@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logindes.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="bgblr"></div>
+    <div class="container">
+        <div class="image"></div>
+        <div class="login">
+            <h2>Login</h2>
+            <form>
+                <input type="email" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" onclick="func()">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function func()
+       {
+       var email = document.getElementById("username").value;
+       var pass = document.getElementById('password').value;
+       if(email == 'alche' && pass == '12345'){
+           alert("succcessfull!")
+           window.location.assign("Homep.html")
+       }
+       else{
+           alert("Wrong entry invalid")
+       }
+       }
+   </script>
+</body>
+</html>
